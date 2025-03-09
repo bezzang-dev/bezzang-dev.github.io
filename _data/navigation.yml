@@ -17,6 +17,6 @@ main:
 
   - title: "Backend"
     url: /backend/
-
-  - title: "Portfolio"
-    url: /portfolio/
+  
+  - title: "CV"
+    url: /cv/
