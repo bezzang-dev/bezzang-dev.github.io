@@ -6,17 +6,8 @@
 
 main: 
     
-  - title: "PS"
-    url: /ps/
-
-  - title: "Network"
-    url: /network/
-
-  - title: "Database"
-    url: /database/
-
-  - title: "Backend"
-    url: /backend/
+  - title: "Posts"
+    url: /posts/
   
   - title: "CV"
     url: /cv/
