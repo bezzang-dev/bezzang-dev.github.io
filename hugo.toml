@@ -92,7 +92,6 @@ hasCJKLanguage = false
     min = "0.128.0"
 
 [params]
-  favicon = "/favicon.ico"
   # site default theme ["auto", "light", "dark"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
