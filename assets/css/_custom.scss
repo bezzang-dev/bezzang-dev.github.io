@@ -2,6 +2,6 @@
   display: none;
 }
 
-.img.lazyloaded {
+.home[data-home=posts] .summary .featured-image-preview img.lazyloaded {
   border-radius: 10px;
 }
