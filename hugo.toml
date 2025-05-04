@@ -59,32 +59,38 @@ hasCJKLanguage = false
     title = ""
 
   [[menu.main]]
-
     weight = 3
-
     identifier = "categories"
-
     pre = ""
-
     post = ""
-
     name = "Categories"
-
     url = "/categories/"
-
     title = ""
 
+  [[menu.main]]
+      weight = 5
+      identifier = "about"
+      pre = ""
+      post = ""
+      name = "About"
+      url = "/about/"
+      title = ""
+
+  [[menu.main]]
+      weight = 6
+      identifier = "github"
+      pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
+      post = ""
+      name = ""
+      url = "https://github.com/bezzang-dev"
+      title = "GitHub"
 
 # Markup related configuration in Hugo
 
 [markup]
-
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
-
   [markup.highlight]
-
     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
-
     noClasses = false
 
 [module]
@@ -92,6 +98,7 @@ hasCJKLanguage = false
     min = "0.128.0"
 
 [params]
+
   # site default theme ["auto", "light", "dark"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
@@ -186,33 +193,18 @@ hasCJKLanguage = false
 
   # Search config
   [params.search]
-    enable = false
-    # type of search engine ["lunr", "algolia"]
-    # 搜索引擎的类型 ["lunr", "algolia"]
-    type = "lunr"
-    
-    # max index length of the chunked content
-    contentLength = 4000
-    
-    # placeholder of the search bar
-    placeholder = ""
-    
-    # max number of results length
-    maxResultLength = 10
-    # snippet length of the result
-    snippetLength = 30
-    
-    # HTML tag name of the highlight part in results
-    # 搜索结果中高亮部分的 HTML 标签
-    highlightTag = "em"
-    
-    # whether to use the absolute URL based on the baseURL in search index
-    # 是否在搜索索引中使用基于 baseURL 的绝对路径
-    absoluteURL = false
-    [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
+      enable = true
+      type = "algolia"
+      contentLength = 4000
+      placeholder = ""
+      maxResultLength = 10
+      snippetLength = 30
+      highlightTag = "em"
+      absoluteURL = false
+      [languages.en.params.search.algolia]
+        index = ""
+        appID = ""
+        searchKey = ""
 
   # Home page config
   [params.home]
